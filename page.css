@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+/*index page*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spectral SC", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container .head{
+    width: 100%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0%;
+
+}
+.container .head .logo{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background: url(/logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container .head  h4{
+    font-family: "Viaoda Libre", serif;
+    font-weight: 900;
+    font-style: normal;
+        color: #d8d2d2;;
+        position: relative;
+        left: 40px;
+        top: 15px; 
+        font-size: 14px;
+        white-space: nowrap;    
+    }
+.container .head .nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+.container .head .nav ul li a{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #f0e4e4;
+    text-decoration: none; 
+    cursor: pointer;
+}
+.container .head .nav ul li{
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 700;
+     list-style: none;
+}
+.container .head .nav ul li a:hover{
+    border-bottom: 2px solid #0ac5f9;
+}
+.video-content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: rgba(0, 0, 0,0.1);
+}
+.video-content .content {
+    text-align: center;
+    width: 100%;
+}
+.video-content .content h1{ 
+    font-family: "Viaoda Libre", serif;
+    font-weight: 400;
+    font-style: normal;  
+    font-size: px;
+    color: #fff;
+    margin-bottom: 0px;
+    
+}
+.video-content .content h2{ 
+      font-family: "Cinzel Decorative", serif;
+     font-weight: 400;
+      font-style: normal;
+    font-size: px;
+    color: #fff;
+    margin-bottom: 20px;   
+}
+.video-content .content a{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #000000;
+    padding: 15px 25px;
+    border-radius: 50px;
+}
+.content a:hover{
+    background-color: #fff;
+    color: #010810;
+    transition: 0.3s;
+}
+.alpine-vide{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+    .alpine-vide{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+@media (max-aspect-ratio: 16/9) {
+    .alpine-vide{
+        width: auto;
+        height: 100%;
+    } 
+}
+footer {
+    text-align: center;
+    background: #f9f9f9;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+     font-size: 10px;
+     text-decoration: none;
+}
+/*product page*/
+
+.contai{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contai .heads{
+    width: 100%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0%;
+    border-bottom: 3px solid rgba(13, 118, 192, 0.3); 
+    padding-bottom: 10px;
+}
+.contai .heads .logo{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background: url(/logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.contai .heads  h4{
+    font-family: "Viaoda Libre", serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #010101;
+    position: relative;
+    left: 40px;
+    top: 15px; 
+    font-size: 14px;
+    white-space: nowrap;    
+}
+.contai .heads .navbar ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.contai .heads .navbar ul li a {
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1d1b1b;
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+.contai .heads .navbar ul li {
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 700;
+    list-style: none;
+}
+
+.contai .heads .navbar ul li a:hover {
+    border-bottom: 2px solid #0ac5f9;
+}
+.about {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 40px 5%;
+    align-items: center;
+    min-height: calc(100vh - 120px);
+}
+.about .aboutcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about .aboutcontent h1
+{ font-family: "Cinzel Decorative", serif;
+font-weight: 400;
+ font-style: normal;
+font-size: 52px;
+color: #010810;
+}
+.about .aboutcontent span{
+    font-family: "Viaoda Libre", serif;
+    font-weight: 400;
+    font-style: normal;  
+    font-size: 30px;
+     padding: 0 17%;
+     bottom: 4%;
+}
+.about .aboutcontent p{
+    font-family: "Lexend", sans-serif;
+    font-size: 18px;
+}
+.alpine-image {
+    width: 88%;
+    height: 88%;
+    background: url('/blue\ alpineremovebg-preview.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+section {
+    background: white;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-family: "Cinzel Decorative", serif;
+    font-size: 2rem;
+    color: #010810; 
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2a2828;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.feature {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.feature:hover {
+    background-color: rgba(64, 61, 61, 0.667);
+    color: #010810;
+    transition: 0.3s;
+}
+
+.feature strong {
+    color: rgba(0, 0, 0, 0.667);
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+}
+
+
+@media (max-width: 78px) {
+    section {
+        padding: 20px;
+        margin: 20px;
+    }
+    
+}

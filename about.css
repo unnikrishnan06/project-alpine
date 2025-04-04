@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spectral SC", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+body {
+    background-color: #000000; /* Black background */
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container .head{
+    width: 100%;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   align-items: center;
+   justify-content: space-between;
+   padding:  0 5%;
+   background: linear-gradient(45deg, #000000, #000000, #000000, #000000); /* Gradient color */
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+}
+.container .head .logo{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background: url(/logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container .head .nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+.container .head .nav ul li a{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff0000;
+    text-decoration: none; 
+    cursor: pointer;
+}
+.container .head .nav ul li{
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 700;
+     list-style: none;
+}
+.container .head .nav ul li a:hover{
+    border-bottom: 2px solid #0ac5f9;
+}
+.video-content img.alpine-image {
+    width: 100%;
+    height: 100vh; /* Ensures full viewport height */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* To send the image to the background */
+}
+.first-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.alpine-image {
+    width: 100%; /* Adjusts image width */
+    max-width: 1600px; /* Prevents excessive enlargement */
+    height: auto; /* Maintains aspect ratio */
+    transition: transform 0.3s ease-in-out;
+}
+.second-image {
+    width: 100%; /* Ensures the image spans full width */
+    height: auto;
+    display: block;
+}
+.About { /* About section */
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}
+
+.About .content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.About h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgb(90, 2, 2);
+    margin-bottom: 10px; /* Space below the heading */
+}
+.About h2 {
+    font-size: 2rem;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px; /* Space below the heading */
+}
+.first-paragraph {
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+    margin: 80px auto; 
+    font-size: 1.5rem;
+    color: white;
+    padding: 20px;
+}
+.second-paragraph {
+    position: relative;
+    text-align: center;
+    max-width: 1500px;
+    margin: 40px auto;
+    font-size: 1.5rem;
+    color: white;
+    padding: 20px;
+}
+.content a:hover{
+    background-color: #ffffff;
+    color: #000000;
+    transition: 0.3s;
+}
+/* Styling the footer */
+footer {
+    text-align: center;
+    background: linear-gradient(135deg, #4d4d4d, #444, #1f1f1f);
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    background: linear-gradient(135deg, #ffffff, #ffffff, #ffffff);
+    font-size: 10px;
+}

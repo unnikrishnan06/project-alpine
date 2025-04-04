@@ -1,0 +1,137 @@
+/*font style for the body part*/
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap');
+
+body {
+    font-family: "Spectral SC", serif;/* styling with decorative fonts*/
+    font-weight: 200;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background: url("/Alpin.jpg") no-repeat center center/cover;/* set background image */
+    color: #ffffff;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #1f1f1f, #444, #1f1f1f);/*applying gradient background colour*/
+    
+}
+
+.logo img {
+    width: 50px;/*setting logo width*/
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff5733;/* Change color on hover */
+}
+
+/* Main Section styling */
+main {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(50, 50, 50, 0.9));
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ffcc00;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: auto;
+    background: linear-gradient(135deg, #2e2e2e, #1a1a1a);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.form-group {
+    margin-bottom: 15px;/* Add space between form fields */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+/* Input and Textarea Styling */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #444;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+/* Submit Button Styling */
+button {
+    background: linear-gradient(135deg, #ff5733, #ffcc00);/* Gradient background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s;/* Smooth background transition */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* Button Hover Effect */
+button:hover {
+    background: linear-gradient(135deg, #c0392b, #ff9900);/* Change gradient on hover */
+}
+
+/* Contact Info Section */
+.contact-info {
+    margin-top: 40px;/* Add space above contact info */
+}
+
+.contact-info h2 {
+    color: #ffcc00;/* Set heading color */
+    text-transform: uppercase;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff, #444, #fff8f8);
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+     font-size: 10px;
+}
+
