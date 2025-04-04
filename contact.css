@@ -7,7 +7,7 @@ body {
     font-style: normal;
     margin: 0;
     padding: 0;
-    background: url("/Alpin.jpg") no-repeat center center/cover;/* set background image */
+    background: url("./Alpin.jpg") no-repeat center center/cover;/* set background image */
     color: #ffffff;
 }
 
